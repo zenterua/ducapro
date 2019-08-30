@@ -1,0 +1,86 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 09 - ACCORDEON */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.accordeonTitle {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000;
+    cursor: pointer;
+    letter-spacing: .6px;
+    padding: 40px 0;
+    padding-right: 40px;
+    font-family: $titlesFont;
+    border-top: 2px solid #D5D5D5;
+    transition: color 250ms linear;
+    &:before,
+    &:after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 20px;
+        height: 3px;
+        margin-top: -1px;
+        background: $orangeColor;
+        transition: transform 250ms linear;
+        content: '';
+    }
+    &:after {
+        transform: rotate(-90deg);
+    }
+    &:not(.active):last-of-type {
+        border-bottom: 2px solid #D5D5D5;
+    }
+    &.active {
+        &:after {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+.accordeonToggle {
+    display: none;
+    padding-bottom: 65px;
+    &:last-child {
+        border-bottom: 2px solid #D5D5D5;
+    }
+}
+
+/*----------------------------------------------------------------*/
+/* HOVER
+/*----------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+    .accordeonTitle:hover {
+        color: $orangeColor;
+    }
+}
+
+/*----------------------------------------------------------------*/
+/* Media Queries
+/*----------------------------------------------------------------*/
+
+@media (max-width: 1500px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+    .accordeonTitle {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .accordeonToggle {
+        padding-bottom: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+}

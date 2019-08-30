@@ -1,0 +1,125 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 11 - FOOTER */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+	position: relative;
+	background: #1D1D1D;
+	color: #fff;
+	font-family: $textFont;
+	padding: 75px 0 60px;
+	.bottomInfo {
+		display: flex;
+		justify-content: space-between;
+	}
+	a {
+		transition: color 250ms linear;
+	}
+}
+
+.footerInfo {
+	position: relative;
+	font-size: 16px;
+	line-height: 30px;
+	.as {
+		margin-bottom: 15px;
+	}
+}
+
+.footerCopy {
+	color: #989898;
+	span {	
+		margin-right: 50px;
+	}
+}
+
+.devLink {
+	backface-visibility: hidden;
+	color: $orangeColor;
+	span {
+		transition: color 250ms linear;
+	}
+	img {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 100%;
+		height: auto;
+		margin-left: 5px;
+	}
+}
+
+/*----------------------------------------------------------------*/
+/* HOVER
+/*----------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+	.footerInfo,
+	.footerCopy {
+		a:hover {
+			color: $orangeColor;
+		}
+	}
+	.devLink:hover span {
+		color: #fff;
+	}
+}
+
+/*----------------------------------------------------------------*/
+/* Media Queries
+/*----------------------------------------------------------------*/
+
+@media (max-width: 1500px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+    footer {
+    	padding: 50px 0 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    footer {
+    	padding: 45px 0;
+    	text-align: center;
+    	.as {
+    		margin-bottom: 0;
+    	}
+    	.bottomInfo {
+	    	display: block;
+	    	text-align: center;
+	    	span {
+	    		margin-right: 0;
+	    		margin-bottom: 20px;
+	    	}
+	    	a {
+	    		display: table;
+	    		margin: 0 auto 40px;
+	    	}
+	    }
+	    .footerCopy {
+	    	span {
+	    		display: inline-block;
+	    		margin-bottom: 10px;
+	    	}
+	    }
+	    .footerInfo {
+	    	margin-bottom: 20px;
+	    	.as {
+				margin-bottom: 0;
+		    }
+		    a {
+		    	display: table;
+		    	margin: 0 auto;
+		    }
+	    }
+	    .devLink {
+	    	margin-bottom: 0 !important;
+	    }
+    }
+
+}

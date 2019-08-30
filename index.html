@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+   
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Ducapro</title>
+    
+    <style>
+        #loader-wrapper {position: fixed;left: 0;top: -100px;right: 0;bottom: -100px;background: #000;z-index: 100;}
+        body:not(.mobile)::-webkit-scrollbar {width: 6px;}
+        body:not(.mobile)::-webkit-scrollbar-track {background: rgba(192, 192, 192, .7); width: 3px;}
+        body:not(.mobile)::-webkit-scrollbar-thumb {background: #FE4E03;width: 3px;}
+
+        #loader-wrapper .imgWrapper{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}#loader-wrapper img{padding:0 30px}#loader-wrapper span:first-of-type,#loader-wrapper span:first-of-type:after,#loader-wrapper span:first-of-type:before{position:absolute;top:50%;left:0;width:3px;height:0;background:#fff;transform:translateY(-50%);-webkit-transform:translateY(-50%);content:'';-webkit-animation:loaderAni 1s linear infinite .4s;animation:loaderAni 1s linear infinite .4s}#loader-wrapper span:first-of-type:before{left:100%;margin-left:4px;-webkit-animation:loaderAni2 1s linear infinite .2s;animation:loaderAni2 1s linear infinite .2s}#loader-wrapper span:first-of-type:after{left:200%;margin-left:8px;-webkit-animation:loaderAni3 1s linear infinite;animation:loaderAni3 1s linear infinite}#loader-wrapper span:last-of-type,#loader-wrapper span:last-of-type:after,#loader-wrapper span:last-of-type:before{position:absolute;top:50%;right:0;width:3px;height:0;background:#fff;transform:translateY(-50%);-webkit-transform:translateY(-50%);content:'';-webkit-animation:loaderAni 1s linear infinite .4s;animation:loaderAni 1s linear infinite .4s}#loader-wrapper span:last-of-type:before{right:100%;margin-right:4px;-webkit-animation:loaderAni2 1s linear infinite .2s;animation:loaderAni2 1s linear infinite .2s}#loader-wrapper span:last-of-type:after{right:200%;margin-right:8px;-webkit-animation:loaderAni3 1s linear infinite;animation:loaderAni3 1s linear infinite} @-webkit-keyframes loaderAni{0,100%{height:0}50%{height:9px}}@keyframes loaderAni{0,100%{height:0}50%{height:9px}}@-webkit-keyframes loaderAni2{0,100%{height:0}50%{height:20px}}@keyframes loaderAni2{0,100%{height:0}50%{height:20px}}@-webkit-keyframes loaderAni3{0,100%{height:0}50%{height:30px}}@keyframes loaderAni3{0,100%{height:0}50%{height:30px}}
+    </style>
+
+    <link rel="stylesheet" href="css/main-style.min.css">
+    
+</head>
+<body>
+    <!--    Loader-START    -->
+    <div id="loader-wrapper">
+        <div class="imgWrapper">
+            <span></span>
+            <img src="img/logo-loader.png" alt="">
+            <span></span>
+        </div>
+    </div>
+    <!--    Loader-END  -->
+
+    <div id="content-block">
+        <!-- Header-START -->
+        <header>
+            <div class="flexWrap">
+                <nav>
+                    <ul>
+                        <li class="how-it-works"><a href="index.html#section2">How it works</a></li>
+                        <li class="what-we-do"><a href="index.html#section3">What we do</a></li>
+                        <li class="faq"><a href="index.html#section4">FAQ</a></li>
+                    </ul>
+
+                    <a href="index.html#section5" class="button">Pre - register</a>
+                </nav>
+
+                <a id="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+
+                <a href="index.html#section5" class="button hidden-xs hidden-sm">Pre - register</a>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <!-- Header-END -->
+
+        <section class="section banner">
+            <div id="section1" class="scrollAnchor"></div>
+
+            <div class="clipWrapper">
+                <div id="home_wave"></div>
+            </div> 
+
+            <div class="cellView">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 slideRight">
+                            <h1 class="h1 as light bannerTitle">Great ads need great music.</h1>
+                        </div>
+                    </div>
+                    <div class="emptySpace60 emptySpace-xs40"></div>
+                    <div class="row">
+                        <div class="col-sm-6 slideRight aniDelay">
+                            <div class="bannerInfo">
+                               <p>For business using music</p> 
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-sm-offset-1 slideLeft aniDelay">
+                            <div class="bannerInfo cirYel">
+                                <p>For music Artist & songwriters</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fadeIn aniDelay3">
+                <div class="scrollButtonWrap ">
+                    <div class="scrollButton">
+                        <div class="imgWrapper">
+                            <img src="img/scroll-down.png" alt="">
+                            <span></span>
+                        </div>
+                    </div>
+                    <h6 class="h6 as light">Scroll down</h6>
+                </div>
+            </div>
+            
+            <div class="clipWrapper">
+                <div class="scale aniDelay2">
+                    <div class="bigLetter imgWrapper">
+                        <img src="img/background-d.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="section processSwiper whiteBlock" data-navAnchor="how-it-works">
+            <div id="section2" class="scrollAnchor"></div>
+            <div class="emptySpace150 emptySpace-lt100 emptySpace-sm50"></div>
+
+            <div class="container-fluid nopadding">
+                <div class="row verAlign-sm">
+                    <div class="col-md-6 col-md-offset-1">
+                        <div class="sectionTitle">
+                            <h2 class="h1 as fadeIn">Process</h2>
+                            <div class="bubble borderBulle size6 scale aniDelay3"></div>
+                        </div>
+
+                        <div class="emptySpace80 emptySpace-lt10 emptySpace-sm20"></div>
+                        <!--    Swiper-START    -->
+                        <div class="swiperMainWrapper mogileFullWidth">
+                            <div class="swiperButtonWrapper">
+                                <!--    Swiper Buttons-START    -->
+                                <div class="swiper-button-prev">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                
+                                <!--    Swiper poiner pagination-START  -->
+                                <div class="fractionWrapper">
+                                    <span></span>
+                                    <div class="swiper-pagination"></div>
+                                    <span></span>
+                                </div>
+                                <!--    Swiper poiner pagination-END    -->
+
+                                <div class="swiper-button-next">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <!--    Swiper Buttons-END  -->
+                            </div>
+                            
+                            <div class="swiper-container fadeIn aniDelay" data-auto-height="1">
+                                <div class="swiper-wrapper">
+                                    <!--    Slide1-START    -->
+                                    <div class="swiper-slide" style="">
+                                        <div class="sliderInfo" >
+                                            <div class="emptySpace120 emptySpace-lt40 emptySpace-sm20"></div>
+                                            
+                                            <div class="bubble scale aniDelay4"></div>
+                                            <div class="bubble color2 size2 scale aniDelay1"></div>
+                                            <div class="bubble color3 size3 scale aniDelay6"></div>
+
+                                            <div class="bigNumber fadeIn">01</div>
+                                            <div class="simpleArticle normall fadeIn aniDelay2">
+                                                <h3>Create an account</h3>
+                                                <p>Get started on Tracks & Fields. It is very easy to let us find the best music for your projects in advertising, film and interactive. All according to your music briefing, time constraints and budget.</p>
+                                            </div>
+
+                                            <div class="emptySpace120 emptySpace-lt30 emptySpace-sm50"></div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!--    Slide1-END  -->
+                                    
+                                    <!--    Slide2-START    -->
+                                    <div class="swiper-slide" style="">
+                                        <div class="sliderInfo" >
+                                            <div class="emptySpace120 emptySpace-lt40 emptySpace-sm20"></div>
+                                            
+                                            <div class="bubble"></div>
+                                            <div class="bubble color2 size2"></div>
+                                            <div class="bubble color3 size3"></div>
+
+                                            <div class="bigNumber">02</div>
+                                            <div class="simpleArticle normall">
+                                                <h3>Create a request</h3>
+                                                <p>Get started on Tracks & Fields. It is very easy to let us find the best music for your projects in advertising, film and interactive. All according to your music briefing, time constraints and budget. Get started on Tracks & Fields. It is very easy to let us find the best music for your projects in advertising, film and interactive. All according to your music briefing, time constraints and budget.</p>
+                                            </div>
+
+                                            <div class="emptySpace120 emptySpace-lt30 emptySpace-sm50"></div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!--    Slide2-END  -->
+                                    
+                                    <!--    Slide3-START    -->
+                                    <div class="swiper-slide" style="">
+                                        <div class="sliderInfo" >
+                                            <div class="emptySpace120 emptySpace-sm30"></div>
+                                            
+                                            <div class="bubble"></div>
+                                            <div class="bubble color2 size2"></div>
+                                            <div class="bubble color3 size3"></div>
+
+                                            <div class="bigNumber">03</div>
+                                            <div class="simpleArticle normall">
+                                                <h3>Review & select track</h3>
+                                                <p>Get started on Tracks & Fields. It is very easy to let us find the best music for your projects.</p>
+                                            </div>
+
+                                            <div class="emptySpace120 emptySpace-sm50"></div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!--    Slide3-END  -->
+                                    
+                                    <!--    Slide4-START    -->
+                                    <div class="swiper-slide" style="">
+                                        <div class="sliderInfo" >
+                                            <div class="emptySpace120 emptySpace-lt40 emptySpace-sm20"></div>
+                                            
+                                            <div class="bubble"></div>
+                                            <div class="bubble color2 size2"></div>
+                                            <div class="bubble color3 size3"></div>
+
+                                            <div class="bigNumber">04</div>
+                                            <div class="simpleArticle normall">
+                                                <h3>License</h3>
+                                                <p>Get started on Tracks & Fields. It is very easy to let us find the best music for your projects in advertising, film and interactive. All according to your music briefing, time constraints and budget.</p>
+                                            </div>
+
+                                            <div class="emptySpace120 emptySpace-lt30 emptySpace-sm50"></div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!--    Slide4-END  -->
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--    Swiper-END  -->
+                    </div>
+                    <div class="col-md-5">
+                        <div class="customSelectWrapper">
+                            <div class="customSelect active fadeIn">
+                                <span class="bubble size2 scale aniDelay3"></span>
+                                <span class="bubble color4 size4 scale aniDelay5"></span>
+                                <span class="bubble color3 size3 scale aniDelay2"></span>
+
+                                <div class="selectContent">
+                                    <div class="bigNumber size2">01</div>
+                                    <h6 class="h6 as light">Create an account</h6>
+                                </div>
+                            </div>
+
+                            <div class="customSelect bubblePosition2 fadeIn aniDelay2" style="margin-top: 70px;">
+                                <span class="bubble scale aniDelay"></span>
+                                <span class="bubble color3 scale aniDelay3"></span>
+
+                                <div class="selectContent">
+                                    <div class="bigNumber size2">02</div>
+                                    <h6 class="h6 as light">Create a request</h6>
+                                </div>  
+                            </div>
+
+                            <div class="customSelect bubblePosition3 fadeIn aniDelay3" style="margin-top: -50px;">
+                                <span class="bubble size5 scale aniDelay5"></span>
+                                <span class="bubble color3 scale aniDelay2"></span>
+                                <span class="bubble color2 size3 scale aniDelay3"></span>
+
+                                <div class="selectContent">
+                                    <div class="bigNumber size2">03</div>
+                                    <h6 class="h6 as light">Review & select track</h6>
+                                </div>  
+                            </div>
+
+                            <div class="customSelect bubblePosition4 fadeIn aniDelay4">
+                                <span class="bubble color3 size4 scale aniDelay3" ></span>
+                                <span class="bubble scale aniDelay5"></span>
+
+                                <div class="selectContent">
+                                    <div class="bigNumber size2">04</div>
+                                    <h6 class="h6 as light">License</h6>
+                                </div>  
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="emptySpace170 emptySpace-sm50"></div>
+        </section>
+
+        <section class="section whiteBlock" data-navAnchor="what-we-do">
+            <div id="section3" class="scrollAnchor"></div>
+
+            <div class="singleBubble">
+                <div class="bubble borderBulle size3 scale aniDelay"></div>
+            </div>
+            <div class="wrongBuuble fadeIn aniDelay8"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-11 col-md-offset-1 nopadding">
+                        <!--    Swiper-START    -->
+                        <div class="swiperMainWrapper style2 dataTitleSlider mogileFullWidth">
+                            <!--    Swiper Buttons-START    -->
+                            <div class="swiperButtonWrapper style2 fadeIn aniDelay4">
+                                <div class="slideTitle">License</div>
+
+                                <div class="swiper-button-prev style2">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <!--    Swiper poiner pagination-START  -->
+                                <div class="fractionWrapper visible-xs visible-sm">
+                                    <div class="swiper-pagination visible-xs visible-sm"></div>
+                                </div>
+                                <!--    Swiper poiner pagination-END    -->
+
+                                <div class="swiper-button-next style2">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <!--    Swiper Buttons-END  -->
+                            
+                            <div class="swiper-container" data-auto-height="1">
+                                <div class="swiper-wrapper">
+                                    <!--    Slide1-START    -->
+                                    <div class="swiper-slide" data-title="License">
+                                        <div class="txtSide">
+                                            <div class="emptySpace60 emptySpace-sm45"></div>
+
+                                            <h2 class="h1 as light aboutUsTitle fadeIn aniDelay4">About</h2>
+
+                                            <div class="emptySpace20"></div>
+
+                                            <div class="simpleArticle normall light fadeIn aniDelay5">
+                                                <h3>What we do?</h3>
+                                                <h4>Get started on Tracks & Fields. It is very easy to let us find the best music for your projects</h4>
+                                                <p>We believe that you should decide which projects you want to identify with and which you don’t. If you were a vegan you probably wouldn’t want to license for a meat commercial. Or you don’t agree to certain budgets or terms. That decision is yours. You don’t have to pre–clear your music and there is no “add to shopping basket” next to your music. Whenever you see a project of your interest, just hit “submit”. When your music is chosen, you will get all necessary details on the project and only then you license your music.</p>
+                                            </div>
+
+                                            <div class="emptySpace150 emptySpace-sm50"></div>
+                                        </div>
+                                        <div class="bgImage aboutImg" style="background-image: url(img/what-we-do.jpg);"></div>
+                                    </div>
+                                    <!--    Slide1-END  -->
+                                    
+                                    <!--    Slide2-START    -->
+                                    <div class="swiper-slide" data-title="License2">
+                                        <div class="txtSide">
+                                            <div class="emptySpace60 emptySpace-sm45"></div>
+
+                                            <h2 class="h1 as light aboutUsTitle fadeIn aniDelay4">About</h2>
+
+                                            <div class="emptySpace20"></div>
+
+                                            <div class="simpleArticle normall light fadeIn aniDelay5">
+                                                <h3>What we do?</h3>
+                                                <h4>Get started on Tracks & Fields. It is very easy to let us find the best music for your projects</h4>
+                                                <p>We believe that you should decide which projects you want to identify with and which you don’t. If you were a vegan you probably wouldn’t want to license for a meat commercial. Or you don’t agree to certain budgets or terms. That decision is yours.</p>
+                                            </div>
+
+                                            <div class="emptySpace150 emptySpace-sm50"></div>
+                                        </div>
+                                        <div class="bgImage aboutImg" style="background-image: url(img/what-we-do-2.jpg);"></div>
+                                    </div>
+                                    <!--    Slide2-END  -->
+                                    
+                                    <!--    Slide3-START    -->
+                                    <div class="swiper-slide" data-title="License3">
+                                        
+                                        <div class="txtSide">
+                                            <div class="emptySpace60 emptySpace-sm45"></div>
+
+                                            <h2 class="h1 as light aboutUsTitle fadeIn aniDelay4">About</h2>
+
+                                            <div class="emptySpace20"></div>
+
+                                            <div class="simpleArticle normall light fadeIn aniDelay5">
+                                                <h3>What we do?</h3>
+                                                <h4>Get started on Tracks & Fields. It is very easy to let us find the best music for your projects</h4>
+                                                <p>We believe that you should decide which projects you want to identify with and which you don’t. If you were a vegan you probably wouldn’t want to license for a meat commercial. Or you don’t agree to certain budgets or terms. That decision is yours. You don’t have to pre–clear your music and there is no “add to shopping basket” next to your music.</p>
+                                            </div>
+
+                                            <div class="emptySpace150 emptySpace-sm50"></div>
+                                        </div>
+                                        <div class="bgImage aboutImg" style="background-image: url(img/what-we-do.jpg);"></div>
+                                    </div>
+                                    <!--    Slide3-END  -->
+                                    
+                                    <!--    Slide4-START    -->
+                                    <div class="swiper-slide" data-title="License4">
+
+                                        <div class="txtSide">
+                                            <div class="emptySpace60 emptySpace-sm45"></div>
+
+                                            <h2 class="h1 as light aboutUsTitle fadeIn aniDelay4">About</h2>
+
+                                            <div class="emptySpace20"></div>
+
+                                            <div class="simpleArticle normall light fadeIn aniDelay5">
+                                                <h3>What we do?</h3>
+                                                <h4>Get started on Tracks & Fields. It is very easy to let us find the best music for your projects</h4>
+                                                <p>We believe that you should decide which projects you want to identify with and which you don’t. If you were a vegan you probably wouldn’t want to license for a meat commercial. Or you don’t agree to certain budgets or terms. That decision is yours. You don’t have to pre–clear your music and there is no “add to shopping basket” next to your music. Whenever you see a project of your interest, just hit “submit”. When your music is chosen, you will get all necessary details on the project and only then you license your music.
+                                                Whenever you see a project of your interest, just hit “submit”. When your music is chosen, you will get all necessary details on the project and only then you license your music</p>
+                                            </div>
+
+                                            <div class="emptySpace150 emptySpace-sm50"></div>
+                                        </div>
+                                        <div class="bgImage aboutImg" style="background-image: url(img/what-we-do-2.jpg);"></div>
+                                    </div>
+                                    <!--    Slide4-END  -->
+                                </div>
+                            </div>
+                        </div>
+                        <!--    Swiper-END  -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="emptySpace190 emptySpace-lt50 emptySpace-sm50"></div>
+        </section>
+
+        <section class="section tabSection" data-navAnchor="faq">
+            <div id="section4" class="scrollAnchor"></div>
+            
+            <div class="emptySpace50 emptySpace-sm0"></div>
+
+            <div class="container-fluid">
+                <div class="row tabsBlock verAlign-sm">
+                    <div class="col-md-3 col-md-offset-1">
+                        <!--    Tabs-START  -->
+                        <div class="sectionTitle extraLarge">
+                            <h2 class="h1 as fadeIn">FAQ</h2>
+                        </div>
+
+                        <div class="emptySpace60 emptySpace-sm35"></div>
+                        
+                        <div class="mobileTabMenu">
+                            <h5 class="h5 as">Who is listening to my music?</h5>
+                            <i></i>
+                        </div>
+                        <div class="tabMenuWrapp">
+                            <div class="tabCircleWrapper">
+                                <div class="tabCircle"></div>
+                            </div>
+                            <div class="tabMenu active slideRight" >Who is listening to my music?</div>
+                            <div class="tabMenu slideRight aniDelay">How do I get music?</div>
+                            <div class="tabMenu slideRight aniDelay2">How fast is it?</div>
+                            <div class="tabMenu slideRight aniDelay3">How do I get music?</div>
+                        </div>
+                        <!--    Tabs-END    -->
+                    </div>
+
+                    <div class="col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-0">
+                        <div class="tabContent">
+                            <div class="tabEntry" style="display: block;">
+                                <div class="tabEntryTitle">
+                                    <h3 class="h3 as fadeIn">Who is listening to my music?</h3>
+                                </div>
+
+                                <div class="emptySpace45 emptySpace-sm0"></div>
+                                
+                                <!--    Accordeon-START     -->
+                                <div class="accordeon">
+                                    <p class="accordeonTitle active fadeIn aniDelay">
+                                       1. Who is listening to my music?
+                                    </p>
+                                    <div class="accordeonToggle fadeIn aniDelay2" style="display: block;">
+                                        <div class="simpleArticle small">
+                                            <p>To obtain music through Tracks & Fields, you post a request with a briefing.</p>
+                                            <p>Within hours, artists worldwide will submit their music that correspond to your needs, your budget and your project.</p>
+                                            <p>This means you might get music that has been released before, music that has just been produced this week or a piece that has been specifically composed for your project.</p>
+                                        </div>
+                                    </div>
+                                    <p class="accordeonTitle fadeIn aniDelay3">
+                                       2. Is it library/stock music?
+                                    </p>
+                                    <div class="accordeonToggle fadeIn aniDelay4">
+                                        <div class="simpleArticle small">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                        </div>
+                                    </div>
+                                    <p class="accordeonTitle fadeIn aniDelay5">
+                                        3. How can I be sure I get all the rights I need?
+                                    </p>
+                                    <div class="accordeonToggle fadeIn aniDelay6">
+                                        <div class="simpleArticle small">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--    Accordeon-END   -->
+                            </div>
+
+                            <div class="tabEntry">
+                                <div class="tabEntryTitle">
+                                    <h3 class="h3 as">How do I get music?</h3>
+                                </div>
+
+                                <div class="emptySpace45 emptySpace-sm0"></div>
+                                
+                                <!--    Accordeon-START     -->
+                                <div class="accordeon">
+                                    <div class="accordeonTitle active">
+                                       1. Who is listening to my music?
+                                    </div>
+                                    <div class="accordeonToggle" style="display: block;">
+                                        <div class="simpleArticle small">
+                                            <p>To obtain music through Tracks & Fields, you post a request with a briefing.</p>
+                                            <p>Within hours, artists worldwide will submit their music that correspond to your needs, your budget and your project.</p>
+                                            <p>This means you might get music that has been released before, music that has just been produced this week or a piece that has been specifically composed for your project.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordeonTitle">
+                                       2. Is it library/stock music?
+                                    </div>
+                                    <div class="accordeonToggle">
+                                        <div class="simpleArticle small">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordeonTitle">
+                                        3. How can I be sure I get all the rights I need?
+                                    </div>
+                                    <div class="accordeonToggle">
+                                        <div class="simpleArticle small">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--    Accordeon-END   -->
+                            </div>
+
+                            <div class="tabEntry">
+                                <div class="tabEntryTitle">
+                                    <h3 class="h3 as">How fast is it?</h3>
+                                </div>
+
+                                <div class="emptySpace45 emptySpace-sm0"></div>
+                                
+                                <!--    Accordeon-START     -->
+                                <div class="accordeon">
+                                    <div class="accordeonTitle active">
+                                       1. Who is listening to my music?
+                                    </div>
+                                    <div class="accordeonToggle" style="display: block;">
+                                        <div class="simpleArticle small">
+                                            <p>To obtain music through Tracks & Fields, you post a request with a briefing.</p>
+                                            <p>Within hours, artists worldwide will submit their music that correspond to your needs, your budget and your project.</p>
+                                            <p>This means you might get music that has been released before, music that has just been produced this week or a piece that has been specifically composed for your project.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordeonTitle">
+                                       2. Is it library/stock music?
+                                    </div>
+                                    <div class="accordeonToggle">
+                                        <div class="simpleArticle small">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordeonTitle">
+                                        3. How can I be sure I get all the rights I need?
+                                    </div>
+                                    <div class="accordeonToggle">
+                                        <div class="simpleArticle small">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--    Accordeon-END   -->
+                            </div>
+
+                            <div class="tabEntry">
+                                <div class="tabEntryTitle">
+                                    <h3 class="h3 as">How do I get music?</h3>
+                                </div>
+
+                                <div class="emptySpace45 emptySpace-sm0"></div>
+                                
+                                <!--    Accordeon-START     -->
+                                <div class="accordeon">
+                                    <div class="accordeonTitle active">
+                                       1. Who is listening to my music?
+                                    </div>
+                                    <div class="accordeonToggle" style="display: block;">
+                                        <div class="simpleArticle small">
+                                            <p>To obtain music through Tracks & Fields, you post a request with a briefing.</p>
+                                            <p>Within hours, artists worldwide will submit their music that correspond to your needs, your budget and your project.</p>
+                                            <p>This means you might get music that has been released before, music that has just been produced this week or a piece that has been specifically composed for your project.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordeonTitle">
+                                       2. Is it library/stock music?
+                                    </div>
+                                    <div class="accordeonToggle">
+                                        <div class="simpleArticle small">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordeonTitle">
+                                        3. How can I be sure I get all the rights I need?
+                                    </div>
+                                    <div class="accordeonToggle">
+                                        <div class="simpleArticle small">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--    Accordeon-END   -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="emptySpace125 emptySpace-lt5 emptySpace-sm25"></div>
+        </section>
+        
+        <section class="section registerForm whiteBlock">
+            <div id="section5" class="scrollAnchor"></div>
+
+            <div class="emptySpace225 emptySpace-lt70 emptySpace-sm0"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                        <div class="sectionTitle centerTitle normall">
+                            <h2 class="h2 as titleColor fadeIn">Pre- register</h2>
+                            <div class="emptySpace20"></div>
+
+                            <p class="fadeIn aniDelay">Please sign in or create a new account for free.</p>
+                        </div>
+
+                        <div class="emptySpace30"></div>
+
+                        <form>
+                            <div class="row fadeIn aniDelay2">
+                                <div class="col-md-4">
+                                    <span><input class="simpleInput" type="text" value="" placeholder="First Name" /></span>
+
+                                    <div class="emptySpace20"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <span><input class="simpleInput" type="email" value="" placeholder="Email" /></span>
+
+                                    <div class="emptySpace20"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <span><input class="simpleInput" type="text" value="" placeholder="City/Town" /></span>
+
+                                    <div class="emptySpace20"></div>
+                                </div>
+
+                                <div class="col-md-12 fadeIn aniDelay3">
+                                    <span><textarea class="simpleInput " placeholder="Message"></textarea></span>
+
+                                    <div class="emptySpace35"></div>
+                            
+                                    <div class="button btnCenter fadeIn aniDelay4 open-popup" data-rel="1">
+                                        PRE - REGISTER NOW
+                                        <!-- <input type="submit"> -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                        <div class="sectionTitle extraLarge bottomFormTitle fadeIn aniDelay5">
+                            <div class="h2 as">Register</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="emptySpace170 emptySpace-sm50"></div>
+        </section>
+
+        <!-- Footer-START -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class=" col-xs-12 col-sm-4 col-md-3">
+                        <div class="footerInfo">
+                            <h5 class="h5 as light">Contact</h5>
+                            <a href="tel:+48602216612">+48 602-216-612</a>
+                            <a href="mailto:hello@ducapro.com">hello@ducapro.com</a>
+                        </div>
+                    </div>
+                    <div class=" col-xs-12 col-sm-4 col-md-3">
+                        <div class="footerInfo">
+                            <h5 class="h5 as light">Adress</h5>
+                            <p>333 Bloor Street East <br> Toronto ON M4W 1G9</p>
+                        </div>
+                    </div>
+                    <div class=" col-xs-12 col-sm-4 col-md-4 col-md-offset-2">
+                        <!--    Social-START    -->
+                        <div class="socialWrapper">
+                            <h5 class="h5 as light">Social</h5>
+
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="fonts/svg-icons/facebook-logo.svg" alt="">
+                            </a>
+                            <a href="https://plus.google.com/" target="_blank">
+                                <img src="fonts/svg-icons/twitter-logo.svg" alt="">
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="fonts/svg-icons/instagram-logo.svg" alt="">
+                            </a>
+                        </div>
+                        <!--    Social-END  -->
+                    </div>
+                    <div class=" col-xs-12 col-sm-12">
+                        <div class="emptySpace120 emptySpace-lt60 emptySpace-sm45"></div>
+                        <div class="bottomInfo">
+                            <div class="footerCopy"><span>Copyright © 2018 Ducapro</span> <a href="privacy-policy.html">Privacy policy</a></div>
+                            <a class="devLink" href="#" target="_blank"><span>Website by </span> <img src="img/itw-consulting-logo.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer-END -->
+
+        <div class="pageNav">
+            <ul>
+                <li class="active">
+                    <a href="#section1">1</a>
+                </li>
+                <li>
+                    <a href="#section2">2</a>
+                </li>
+                <li>
+                    <a href="#section3">3</a>
+                </li>
+                <li>
+                    <a href="#section4">4</a>
+                </li>
+                <li>
+                    <a href="#section5">5</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--    Popup-START     -->
+    <div class="popupWrapper">
+        <div class="bgLayer"></div>
+        <!--    Popup1-START    -->
+        <div class="popupContent" data-rel="1">
+            <div class="layerClose"></div>
+            <div class="popupContainer size1">
+                <!-- Popup content-START -->
+                <div class="thanksMessage normall">
+                    <h3 class="h3 as">Thank you</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+ 
+                    <span class="bubble color3 size2"></span>
+                    <span class="bubble size4"></span>
+                    <span class="bubble color4 size3"></span>
+                </div>
+                <!-- Popup content-END -->
+
+                <!--    Popup close button-START    -->
+                <div class="buttonClose">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+            </div>
+        </div>
+        <!--    Popup1-END  -->
+
+    </div>
+    <!--    Popup-END   -->
+    
+    <!--    Styles-START    -->
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <!--    Styles-END  -->
+
+    <!-- Fonts-START -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CWork+Sans:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+    <!-- Fonts-END -->
+
+    <!--    Scripts-START   -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.js"></script>
+    <script src="js/banner-animation.js">
+        
+    </script>
+    <!--    Scripts-END     -->
+
+</body>
+</html>

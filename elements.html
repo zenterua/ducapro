@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+   
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Ducapro</title>
+    
+    <style>
+        #loader-wrapper {position: fixed;left: 0;top: -100px;right: 0;bottom: -100px;background: #000;z-index: 100;}
+        body:not(.mobile)::-webkit-scrollbar {width: 6px;}
+        body:not(.mobile)::-webkit-scrollbar-track {background: rgba(192, 192, 192, .7); width: 3px;}
+        body:not(.mobile)::-webkit-scrollbar-thumb {background: #FE4E03;width: 3px;}
+        #loader-wrapper .imgWrapper{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}#loader-wrapper img{padding:0 30px}#loader-wrapper span:first-of-type,#loader-wrapper span:first-of-type:after,#loader-wrapper span:first-of-type:before{position:absolute;top:50%;left:0;width:3px;height:0;background:#fff;transform:translateY(-50%);-webkit-transform:translateY(-50%);content:'';-webkit-animation:loaderAni 1s linear infinite .4s;animation:loaderAni 1s linear infinite .4s}#loader-wrapper span:first-of-type:before{left:100%;margin-left:4px;-webkit-animation:loaderAni2 1s linear infinite .2s;animation:loaderAni2 1s linear infinite .2s}#loader-wrapper span:first-of-type:after{left:200%;margin-left:8px;-webkit-animation:loaderAni3 1s linear infinite;animation:loaderAni3 1s linear infinite}#loader-wrapper span:last-of-type,#loader-wrapper span:last-of-type:after,#loader-wrapper span:last-of-type:before{position:absolute;top:50%;right:0;width:3px;height:0;background:#fff;transform:translateY(-50%);-webkit-transform:translateY(-50%);content:'';-webkit-animation:loaderAni 1s linear infinite .4s;animation:loaderAni 1s linear infinite .4s}#loader-wrapper span:last-of-type:before{right:100%;margin-right:4px;-webkit-animation:loaderAni2 1s linear infinite .2s;animation:loaderAni2 1s linear infinite .2s}#loader-wrapper span:last-of-type:after{right:200%;margin-right:8px;-webkit-animation:loaderAni3 1s linear infinite;animation:loaderAni3 1s linear infinite}@-webkit-keyframes loaderAni{0,100%{height:0}50%{height:9px}}@keyframes loaderAni{0,100%{height:0}50%{height:9px}}@-webkit-keyframes loaderAni2{0,100%{height:0}50%{height:20px}}@keyframes loaderAni2{0,100%{height:0}50%{height:20px}}@-webkit-keyframes loaderAni3{0,100%{height:0}50%{height:30px}}@keyframes loaderAni3{0,100%{height:0}50%{height:30px}}
+        
+    </style>
+
+    <link rel="stylesheet" href="css/main-style.min.css">
+    
+</head>
+<body>
+
+    <!--    Loader-START    -->
+    <div id="loader-wrapper">
+        
+    </div>
+    <!--    Loader-END  -->
+
+    <div id="content-block">
+        <!-- Header-START -->
+        <header>
+            <div class="flexWrap">
+                <nav>
+                    <ul>
+                        <li class="how-it-works"><a href="#section2">How it works</a></li>
+                        <li class="what-we-do"><a href="#section3">What we do</a></li>
+                        <li class="faq"><a href="#section4">FAQ</a></li>
+                    </ul>
+
+                    <a href="#" class="button">Pre - register</a>
+                </nav>
+
+                <a id="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+
+                <a href="#" class="button hidden-xs hidden-sm">Pre - register</a>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <!-- Header-END -->
+
+        <section id="section1" class="section banner">
+            <div class="bgImage" style="background-color: #1E1E1E;"></div>
+            <div class="bgLeft"></div>
+
+            <div class="cellView">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <h1 class="h1 as light bannerTitle">Great ads need great music.</h1>
+                        </div>
+                    </div>
+                    <div class="emptySpace60 emptySpace-xs40"></div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="bannerInfo">
+                               <p>For business using music</p> 
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-sm-offset-1">
+                            <div class="bannerInfo cirYel">
+                                <p>For music Artist & songwriters</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scrollButtonWrap">
+                <div class="scrollButton">
+                    <div class="imgWrapper">
+                        <img src="img/scroll down.png" alt="">
+                        <span></span>
+                    </div>
+                </div>
+                <h6 class="h6 as light">Scroll down</h6>
+            </div>
+
+            <div class="bigLetter imgWrapper">
+                <img src="img/background-d.png" alt="">
+            </div>
+        </section>
+        
+        <div class="emptySpace50"></div>
+       
+        <div class="container">
+            
+            <h1 class="h1 as">HEADING H1 95/104</h1>
+             <div class="emptySpace20"></div>
+            <h2 class="h2 as">HEADING H2 50/70</h2>
+             <div class="emptySpace20"></div>
+            <h3 class="h3 as">HEADING H3 40/46</h3>
+             <div class="emptySpace20"></div>
+            <h4 class="h4 as">HEADING H4 23/29</h4>
+             <div class="emptySpace20"></div>
+            <h5 class="h5 as">HEADING H5 20/40</h5>
+             <div class="emptySpace20"></div>
+            <h6 class="h6 as">HEADING H6 16/24</h6>
+             <div class="emptySpace20"></div>
+
+            <div class="emptySpace20"></div>
+            
+            <div class="simpleArticle large">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis. 22/28</p>
+            </div>
+            
+            <div class="emptySpace20"></div>
+            
+            <div class="simpleArticle normall">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis. 18/30</p>
+            </div>
+            
+           <div class="emptySpace20"></div>
+            
+            <div class="simpleArticle small">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis. 15/24</p>
+            </div>
+
+            <div class="emptySpace20"></div>
+            
+            <div class="simpleArticle">
+                <ul>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                </ul>
+            </div>
+
+            <div class="emptySpace20"></div>
+
+            <div class="simpleArticle normall">
+                <ol>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor.</li>
+                </ol>
+            </div>
+
+            <div class="emptySpace20"></div>
+
+            <div style="background: #222; padding: 30px;">
+                <h1 class="h1 as light">HEADING H1 95/104</h1>
+                <div class="emptySpace20"></div>
+                <h2 class="h2 as light">HEADING H2 50/70</h2>
+                <div class="emptySpace20"></div>
+                <h3 class="h3 as light">HEADING H3 40/46</h3>
+                <div class="emptySpace20"></div>
+                <h4 class="h4 as light">HEADING H4 23/29</h4>
+                <div class="emptySpace20"></div>
+                <h5 class="h5 as light">HEADING H5 20/40</h5>
+                <div class="emptySpace20"></div>
+                <h6 class="h6 as light">HEADING H6 16/24</h6>
+                <div class="emptySpace20"></div>
+            </div>
+
+            <div class="emptySpace20"></div>
+            
+            <div style="background: #222; padding: 30px;">
+                <div class="simpleArticle light large">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis. 22/28</p>
+                </div>
+                
+                <div class="emptySpace20"></div>
+                
+                <div class="simpleArticle light normall">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis. 18/30</p>
+                </div>
+                
+                <div class="emptySpace20"></div>
+                
+                <div class="simpleArticle light small">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis. 15/24</p>
+                </div>
+
+                <div class="emptySpace20"></div>
+
+                <div class="simpleArticle light">
+                    <ul>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                    </ul>
+                </div>
+
+                <div class="emptySpace20"></div>
+
+                <div class="simpleArticle light normall">
+                    <ol>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum dolor.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="emptySpace20"></div>
+
+            <a href="#" class="button">Pre - register</a>
+            
+            <div class="emptySpace20"></div>
+            
+            <a href="#" class="button dark">Pre - register</a>
+
+            <div class="emptySpace20"></div>
+            
+            <div style="background-color: #000; padding: 15px">
+                <!--    Social-START    -->
+                <div class="socialWrapper">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="fonts/svg-icons/facebook-logo.svg" alt="">
+                    </a>
+                    <a href="https://plus.google.com/" target="_blank">
+                        <img src="fonts/svg-icons/twitter-logo.svg" alt="">
+                    </a>
+                    <a hreff="https://www.instagram.com/" target="_blank">
+                        <img src="fonts/svg-icons/instagram-logo.svg" alt="">
+                    </a>
+                </div>
+                <!--    Social-END  -->
+            </div>
+
+            <div class="emptySpace20"></div>
+
+            <input class="simpleInput" type="email" value="" placeholder="Email" />
+            
+            <div class="emptySpace20"></div>
+            
+            <input class="simpleInput invalid" type="password" value="" placeholder="Password" />
+            
+            <div class="emptySpace20"></div>
+            
+            <textarea class="simpleInput" placeholder="Message"></textarea>
+            
+            <div class="emptySpace20"></div>
+            
+            <label class="checkboxEntry">
+                <input type="checkbox" /><span>Product Lorem Ipsum</span>
+            </label>
+            
+            <div class="emptySpace20"></div>
+            
+            <label class="checkboxEntry radio">
+                <input type="radio" name="1" checked /><span>Product Lorem Ipsum</span>
+            </label>
+            
+            <div class="emptySpace20"></div>
+            
+            <label class="checkboxEntry radio">
+                <input type="radio" name="1" /><span>Product Dolor</span>
+            </label>
+
+            <div class="emptySpace20"></div>
+            
+        </div>
+
+        <div class="container">
+            <!--    Swiper-START    -->
+            <div class="swiperMainWrapper">
+                <div class="swiperButtonWrapper">
+                    <!--    Swiper Buttons-START    -->
+                    <div class="swiper-button-prev">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                    <!--    Swiper poiner pagination-START  -->
+                    <div class="fractionWrapper">
+                        <span></span>
+                        <div class="swiper-pagination"></div>
+                        <span></span>
+                    </div>
+                    <!--    Swiper poiner pagination-END    -->
+
+                    <div class="swiper-button-next">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!--    Swiper Buttons-END  -->
+                </div>
+                
+                <div class="swiper-container" style="height: 50vh;">
+                    <div class="swiper-wrapper">
+                        <!--    Slide1-START    -->
+                        <div class="swiper-slide" style="background-color: #62a8d9;"></div>
+                        <!--    Slide1-END  -->
+                        
+                        <!--    Slide2-START    -->
+                        <div class="swiper-slide" style="background-color: #ec94ca;"></div>
+                        <!--    Slide2-END  -->
+                        
+                        <!--    Slide3-START    -->
+                        <div class="swiper-slide" style="background-color: #3fc0be;"></div>
+                        <!--    Slide3-END  -->
+                        
+                        <!--    Slide4-START    -->
+                        <div class="swiper-slide" style="background-color: #62a8d9;"></div>
+                        <!--    Slide4-END  -->
+                        
+                        <!--    Slide5-START    -->
+                        <div class="swiper-slide" style="background-color: #aa72c1;"></div>
+                        <!--    Slide5-END  -->
+                        
+                        <!--    Slide6-START    -->
+                        <div class="swiper-slide" style="background-color: #f6b44d;"></div>
+                        <!--    Slide6-END  -->
+                        
+                        <!--    Slide7-START    -->
+                        <div class="swiper-slide" style="background-color: #d06a5f;"></div>
+                        <!--    Slide7-END  -->
+                        
+                        <!--    Slide8-START    -->
+                        <div class="swiper-slide" style="background-color: #65b265;"></div>
+                        <!--    Slide8-END  -->
+                        
+                        <!--    Slide9-START    -->
+                        <div class="swiper-slide" style="background-color: #eb4e3f;"></div>
+                        <!--    Slide9-END  -->
+                        
+                        <!--    Slide10-START   -->
+                        <div class="swiper-slide" style="background-color: #ff3fb1;"></div>
+                        <!--    Slide10-END     -->
+                    </div>
+                    
+                </div>
+            </div>
+            <!--    Swiper-END  -->
+
+            <div class="emptySpace20"></div>
+
+            <!--    Swiper-START    -->
+                <div class="swiperMainWrapper style2">
+                    <!--    Swiper Buttons-START    -->
+                    <div class="swiperButtonWrapper style2">
+                        <div class="slideTitle">License</div>
+
+                        <div class="swiper-button-prev style2">
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <!--    Swiper poiner pagination-START  -->
+                        <div class="swiper-pagination hidden"></div>
+                        <!--    Swiper poiner pagination-END    -->
+
+                        <div class="swiper-button-next style2">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <!--    Swiper Buttons-END  -->
+
+                    <div class="swiper-container swiper-control-top" style="height: 50vh;">
+                        <div class="swiper-wrapper">
+                            <!--    Slide1-START    -->
+                            <div class="swiper-slide" style="background-color: #62a8d9;"></div>
+                            <!--    Slide1-END  -->
+                            
+                            <!--    Slide2-START    -->
+                            <div class="swiper-slide" style="background-color: #ec94ca;"></div>
+                            <!--    Slide2-END  -->
+                            
+                            <!--    Slide3-START    -->
+                            <div class="swiper-slide" style="background-color: #3fc0be;"></div>
+                            <!--    Slide3-END  -->
+                            
+                            <!--    Slide4-START    -->
+                            <div class="swiper-slide" style="background-color: #62a8d9;"></div>
+                            <!--    Slide4-END  -->
+                            
+                            <!--    Slide5-START    -->
+                            <div class="swiper-slide" style="background-color: #aa72c1;"></div>
+                            <!--    Slide5-END  -->
+                            
+                            <!--    Slide6-START    -->
+                            <div class="swiper-slide" style="background-color: #f6b44d;"></div>
+                            <!--    Slide6-END  -->
+                            
+                            <!--    Slide7-START    -->
+                            <div class="swiper-slide" style="background-color: #d06a5f;"></div>
+                            <!--    Slide7-END  -->
+                            
+                            <!--    Slide8-START    -->
+                            <div class="swiper-slide" style="background-color: #65b265;"></div>
+                            <!--    Slide8-END  -->
+                            
+                            <!--    Slide9-START    -->
+                            <div class="swiper-slide" style="background-color: #eb4e3f;"></div>
+                            <!--    Slide9-END  -->
+                            
+                            <!--    Slide10-START   -->
+                            <div class="swiper-slide" style="background-color: #ff3fb1;"></div>
+                            <!--    Slide10-END     -->
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--    Swiper-END  -->
+            
+            <div class="emptySpace20"></div>
+
+            <div class="coupleSwiperWrapper">
+                <!--    Swiper-START    -->
+                <div class="swiperMainWrapper">
+                    <!--    Swiper Buttons-START    -->
+                    <div class="swiper-button-prev style2">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="swiper-button-next style2">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!--    Swiper Buttons-END  -->
+                    <div class="swiper-container swiper-control-top" style="height: 50vh;">
+                        <div class="swiper-wrapper">
+                            <!--    Slide1-START    -->
+                            <div class="swiper-slide" style="background-color: #62a8d9;"></div>
+                            <!--    Slide1-END  -->
+                            
+                            <!--    Slide2-START    -->
+                            <div class="swiper-slide" style="background-color: #ec94ca;"></div>
+                            <!--    Slide2-END  -->
+                            
+                            <!--    Slide3-START    -->
+                            <div class="swiper-slide" style="background-color: #3fc0be;"></div>
+                            <!--    Slide3-END  -->
+                            
+                            <!--    Slide4-START    -->
+                            <div class="swiper-slide" style="background-color: #62a8d9;"></div>
+                            <!--    Slide4-END  -->
+                            
+                            <!--    Slide5-START    -->
+                            <div class="swiper-slide" style="background-color: #aa72c1;"></div>
+                            <!--    Slide5-END  -->
+                            
+                            <!--    Slide6-START    -->
+                            <div class="swiper-slide" style="background-color: #f6b44d;"></div>
+                            <!--    Slide6-END  -->
+                            
+                            <!--    Slide7-START    -->
+                            <div class="swiper-slide" style="background-color: #d06a5f;"></div>
+                            <!--    Slide7-END  -->
+                            
+                            <!--    Slide8-START    -->
+                            <div class="swiper-slide" style="background-color: #65b265;"></div>
+                            <!--    Slide8-END  -->
+                            
+                            <!--    Slide9-START    -->
+                            <div class="swiper-slide" style="background-color: #eb4e3f;"></div>
+                            <!--    Slide9-END  -->
+                            
+                            <!--    Slide10-START   -->
+                            <div class="swiper-slide" style="background-color: #ff3fb1;"></div>
+                            <!--    Slide10-END     -->
+                        </div>
+                        <!--    Swiper poiner pagination-START  -->
+                        <div class="swiper-pagination swiper-pagination-white"></div>
+                        <!--    Swiper poiner pagination-END    -->
+                    </div>
+                </div>
+                <!--    Swiper-END  -->
+
+                <div class="emptySpace20"></div>
+
+                <!--    Swiper-START    -->
+                <div class="swiperMainWrapper">
+                    <div class="swiper-container swiper-control-bottom" data-breakpoints="1" data-xs-slides="1" data-sm-slides="3" data-md-slides="4" data-lt-slides="5" data-slides-per-view="5">
+                        <div class="swiper-wrapper">
+                            <!--    Slide1-START    -->
+                            <div class="swiper-slide" style="background-color: #62a8d9;"> 
+                                <div class="content" style="height: 100px;">
+
+                                </div>
+                            </div>
+                            <!--    Slide1-END  -->
+                            
+                            <!--    Slide2-START    -->
+                            <div class="swiper-slide" style="background-color: #ec94ca;"> 
+                                <div class="content" style="height: 100px;">
+
+                                </div>
+                            </div>
+                            <!--    Slide2-END  -->
+                            
+                            <!--    Slide3-START    -->
+                            <div class="swiper-slide" style="background-color: #3fc0be;"> 
+                                <div class="content" style="height: 100px;">
+
+                                </div>
+                            </div>
+                            <!--    Slide3-END  -->
+                            
+                            <!--    Slide4-START    -->
+                            <div class="swiper-slide" style="background-color: #62a8d9;"> 
+                                <div class="content" style="height: 100px;">
+
+                                </div>
+                            </div>
+                            <!--    Slide4-END  -->
+                            
+                            <!--    Slide5-START    -->
+                            <div class="swiper-slide" style="background-color: #aa72c1;"> 
+                                <div class="content" style="height: 100px;">
+
+                                </div>
+                            </div>
+                            <!--    Slide5-END  -->
+                            
+                            <!--    Slide6-START    -->
+                            <div class="swiper-slide" style="background-color: #f6b44d;"> 
+                                <div class="content" style="height: 100px;">
+
+                                </div>
+                            </div>
+                            <!--    Slide6-END  -->
+                            
+                            <!--    Slide7-START    -->
+                            <div class="swiper-slide" style="background-color: #d06a5f;"> 
+                                <div class="content" style="height: 100px;">
+
+                                </div>
+                            </div>
+                            <!--    Slide7-END  -->
+                            
+                            <!--    Slide8-START    -->
+                            <div class="swiper-slide" style="background-color: #65b265;"> 
+                                <div class="content" style="height: 100px;">
+
+                                </div>
+                            </div>
+                            <!--    Slide8-END  -->
+                            
+                            <!--    Slide9-START    -->
+                            <div class="swiper-slide" style="background-color: #eb4e3f;"> 
+                                <div class="content" style="height: 100px;">
+
+                                </div>
+                            </div>
+                            <!--    Slide9-END  -->
+                            
+                            <!--    Slide10-START   -->
+                            <div class="swiper-slide" style="background-color: #ff3fb1;"> 
+                                <div class="content" style="height: 100px;">
+
+                                </div>
+                            </div>
+                            <!--    Slide10-END     -->
+                        </div>
+                        <!--    Swiper poiner pagination-START  -->
+                        <div class="swiper-pagination relative-pagination"></div>
+                        <!--    Swiper poiner pagination-END    -->
+                    </div>
+                </div>
+                <!--    Swiper-END  -->
+                
+            </div>
+
+            <div class="emptySpace20"></div>
+
+            <!--    Tabs-START  -->
+            <div class="tabsBlock">
+                <div class="tabMenu active">Tab 1</div>
+                <div class="tabMenu">Tab 2</div>
+                <div class="tabMenu">Tab 3</div>
+                <div class="tabEntry" style="display: block;">
+                    <div class="simpleArticle"> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                    </div>
+                </div>
+                <div class="tabEntry">
+                    <div class="simpleArticle">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                    </div>
+                </div>
+                <div class="tabEntry">
+                    <div class="simpleArticle">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                    </div>
+                </div>
+            </div>
+            <!--    Tabs-END    -->
+           
+            <div class="emptySpace20"></div>
+            
+            <!--    Accordeon-START     -->
+            <div class="accordeon">
+                <div class="accordeonTitle active">
+                    Accordeon 1
+                </div>
+                <div class="accordeonToggle" style="display: block;">
+                    <div class="simpleArticle">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                    </div>
+                </div>
+                <div class="accordeonTitle">
+                    Accordeon 2
+                </div>
+                <div class="accordeonToggle">
+                    <div class="simpleArticle">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                    </div>
+                </div>
+                <div class="accordeonTitle">
+                    Accordeon 3
+                </div>
+                <div class="accordeonToggle">
+                    <div class="simpleArticle">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit augue lacus, id auctor elit placerat id. Nulla ultricies augue at felis elementum, sodales rhoncus metus sagittis.</p>
+                    </div>
+                </div>
+            </div>
+            <!--    Accordeon-END   -->
+        </div>
+        
+        <div class="emptySpace50"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="sliderInfo">
+                        <div class="emptySpace120 emptySpace-sm30"></div>
+                        
+                        <div class="bubble"></div>
+                        <div class="bubble color2 size2"></div>
+                        <div class="bubble color3 size3"></div>
+
+                        <div class="bigNumber">01</div>
+                        <div class="simpleArticle normall">
+                            <h3>Create an account</h3>
+                            <p>Get started on Tracks &amp; Fields. It is very easy to let us find the best music for your projects in advertising, film and interactive. All according to your music briefing, time constraints and budget.</p>
+                        </div>
+
+                        <div class="emptySpace120 emptySpace-sm50"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="customSelect active">
+                        <span class="bubble size2"></span>
+                        <span class="bubble color4 size4"></span>
+                        <span class="bubble color3 size3"></span>
+
+                        <div class="selectContent">
+                            <div class="bigNumber size2">01</div>
+                            <h6 class="h6 as light">Create an account</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer-START -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class=" col-xs-12 col-sm-4 col-md-3">
+                        <div class="footerInfo">
+                            <h5 class="h5 as light">Contact</h5>
+                            <a href="tel:+48602216612">+48 602-216-612</a>
+                            <a href="mailto:hello@ducapro.com">hello@ducapro.com</a>
+                        </div>
+                    </div>
+                    <div class=" col-xs-12 col-sm-4 col-md-3">
+                        <div class="footerInfo">
+                            <h5 class="h5 as light">Adress</h5>
+                            <p>333 Bloor Street East <br> Toronto ON M4W 1G9</p>
+                        </div>
+                    </div>
+                    <div class=" col-xs-12 col-sm-4 col-md-4 col-md-offset-2">
+                        <!--    Social-START    -->
+                        <div class="socialWrapper">
+                            <h5 class="h5 as light">Social</h5>
+
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="fonts/svg-icons/facebook-logo.svg" alt="">
+                            </a>
+                            <a href="https://plus.google.com/" target="_blank">
+                                <img src="fonts/svg-icons/twitter-logo.svg" alt="">
+                            </a>
+                            <a hreff="https://www.instagram.com/" target="_blank">
+                                <img src="fonts/svg-icons/instagram-logo.svg" alt="">
+                            </a>
+                        </div>
+                        <!--    Social-END  -->
+                    </div>
+                    <div class=" col-xs-12 col-sm-12">
+                        <div class="emptySpace120 emptySpace-xs45"></div>
+                        <div class="bottomInfo">
+                            <div class="footerCopy"><span>Copyright © 2018 Ducapro</span> <a href="#">Privacy polivy</a></div>
+                            <a class="devLink" href="#" target="_blank"><span>Website by </span> ITW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer-END -->
+
+    </div>
+
+    <!--    Popup-START     -->
+    <div class="popupWrapper">
+        <div class="bgLayer"></div>
+        <!--    Popup1-START    -->
+        <div class="popupContent" data-rel="1">
+            <div class="layerClose"></div>
+            <div class="popupContainer size1">
+                <!-- Popup content-START -->
+                <div class="popupContent">
+                    
+                </div>
+                <!-- Popup content-END -->
+
+                <!--    Popup close button-START    -->
+                <div class="buttonClose">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+            </div>
+        </div>
+        <!--    Popup1-END  -->
+
+        <!--    Video-START    -->
+        <div class="popupContent" data-rel="videoPopup">
+            <div class="layerClose"></div>
+            <div class="popupContainer">
+                <!-- Popup content-START -->
+                <div class="popupVideoWrapper">
+                    <iframe width="560" height="315" src="about:blank" allowfullscreen></iframe>
+                </div>
+                <!-- Popup content-END -->
+
+                <!--    Popup close button-START    -->
+                <div class="buttonClose">
+                    <span></span><span></span>
+                </div>
+                <!--    Popup close button-END  -->
+            </div>
+        </div>
+        <!--    Video-END  -->
+
+    </div>
+    <!--    Popup-END   -->
+    
+    <!--    Styles-START    -->
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <!--    Styles-END  -->
+
+    <!-- Fonts-START -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CWork+Sans:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+    <!-- Fonts-END -->
+
+    <!--    Scripts-START   -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <script src="js/global.min.js"></script>
+    <!--    Scripts-END     -->
+
+</body>
+</html>

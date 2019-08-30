@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+   
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Ducapro</title>
+    
+    <style>
+        #loader-wrapper {position: fixed;left: 0;top: -100px;right: 0;bottom: -100px;background: #000;z-index: 100;}
+        body:not(.mobile)::-webkit-scrollbar {width: 6px;}
+        body:not(.mobile)::-webkit-scrollbar-track {background: rgba(192, 192, 192, .7); width: 3px;}
+        body:not(.mobile)::-webkit-scrollbar-thumb {background: #FE4E03;width: 3px;}
+        #loader-wrapper .imgWrapper{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}#loader-wrapper img{padding:0 30px}#loader-wrapper span:first-of-type,#loader-wrapper span:first-of-type:after,#loader-wrapper span:first-of-type:before{position:absolute;top:50%;left:0;width:3px;height:0;background:#fff;transform:translateY(-50%);-webkit-transform:translateY(-50%);content:'';-webkit-animation:loaderAni 1s linear infinite .4s;animation:loaderAni 1s linear infinite .4s}#loader-wrapper span:first-of-type:before{left:100%;margin-left:4px;-webkit-animation:loaderAni2 1s linear infinite .2s;animation:loaderAni2 1s linear infinite .2s}#loader-wrapper span:first-of-type:after{left:200%;margin-left:8px;-webkit-animation:loaderAni3 1s linear infinite;animation:loaderAni3 1s linear infinite}#loader-wrapper span:last-of-type,#loader-wrapper span:last-of-type:after,#loader-wrapper span:last-of-type:before{position:absolute;top:50%;right:0;width:3px;height:0;background:#fff;transform:translateY(-50%);-webkit-transform:translateY(-50%);content:'';-webkit-animation:loaderAni 1s linear infinite .4s;animation:loaderAni 1s linear infinite .4s}#loader-wrapper span:last-of-type:before{right:100%;margin-right:4px;-webkit-animation:loaderAni2 1s linear infinite .2s;animation:loaderAni2 1s linear infinite .2s}#loader-wrapper span:last-of-type:after{right:200%;margin-right:8px;-webkit-animation:loaderAni3 1s linear infinite;animation:loaderAni3 1s linear infinite}@-webkit-keyframes loaderAni{0,100%{height:0}50%{height:9px}}@keyframes loaderAni{0,100%{height:0}50%{height:9px}}@-webkit-keyframes loaderAni2{0,100%{height:0}50%{height:20px}}@keyframes loaderAni2{0,100%{height:0}50%{height:20px}}@-webkit-keyframes loaderAni3{0,100%{height:0}50%{height:30px}}@keyframes loaderAni3{0,100%{height:0}50%{height:30px}}
+        
+    </style>
+
+    <link rel="stylesheet" href="css/main-style.min.css">
+    
+</head>
+<body>
+
+    <!--    Loader-START    -->
+    <div id="loader-wrapper">
+        <div class="imgWrapper">
+            <span></span>
+            <img src="img/logo-loader.png" alt="">
+            <span></span>
+        </div>
+    </div>
+    <!--    Loader-END  -->
+
+    <div id="content-block">
+        <!-- Header-START -->
+        <header class="style2">
+            <div class="flexWrap">
+                <nav>
+                    <ul>
+                        <li class="how-it-works"><a href="index.html#section2">How it works</a></li>
+                        <li class="what-we-do"><a href="index.html#section3">What we do</a></li>
+                        <li class="faq"><a href="index.html#section4">FAQ</a></li>
+                    </ul>
+
+                    <a href="index.html#section5" class="button">Pre - register</a>
+                </nav>
+
+                <a id="logo" href="index.html"><img src="img/logo.png" alt=""></a>
+
+                <a href="index.html#section5" class="button hidden-xs hidden-sm">Pre - register</a>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <!-- Header-END -->
+
+        <section class="section ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                        <div class="cellView pageHeight txtCenter normall">
+                            <h1 class="h3 as">404 Not found.</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-START -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class=" col-xs-12 col-sm-4 col-md-3">
+                        <div class="footerInfo">
+                            <h5 class="h5 as light">Contact</h5>
+                            <a href="tel:+48602216612">+48 602-216-612</a>
+                            <a href="mailto:hello@ducapro.com">hello@ducapro.com</a>
+                        </div>
+                    </div>
+                    <div class=" col-xs-12 col-sm-4 col-md-3">
+                        <div class="footerInfo">
+                            <h5 class="h5 as light">Adress</h5>
+                            <p>333 Bloor Street East <br> Toronto ON M4W 1G9</p>
+                        </div>
+                    </div>
+                    <div class=" col-xs-12 col-sm-4 col-md-4 col-md-offset-2">
+                        <!--    Social-START    -->
+                        <div class="socialWrapper">
+                            <h5 class="h5 as light">Social</h5>
+
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="fonts/svg-icons/facebook-logo.svg" alt="">
+                            </a>
+                            <a href="https://plus.google.com/" target="_blank">
+                                <img src="fonts/svg-icons/twitter-logo.svg" alt="">
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="fonts/svg-icons/instagram-logo.svg" alt="">
+                            </a>
+                        </div>
+                        <!--    Social-END  -->
+                    </div>
+                    <div class=" col-xs-12 col-sm-12">
+                        <div class="emptySpace120 emptySpace-lt60 emptySpace-sm45"></div>
+                        <div class="bottomInfo">
+                            <div class="footerCopy"><span>Copyright © 2018 Ducapro</span> <a href="privacy-policy.html">Privacy policy</a></div>
+                            <a class="devLink" href="#" target="_blank"><span>Website by </span> <img src="img/itw-consulting-logo.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer-END -->
+
+    </div>
+    
+    <!--    Styles-START    -->
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <!--    Styles-END  -->
+
+    <!-- Fonts-START -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CWork+Sans:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+    <!-- Fonts-END -->
+
+    <!--    Scripts-START   -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <script src="js/global.min.js"></script>
+    <!--    Scripts-END     -->
+
+</body>
+</html>
